@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Security: no scripts at all; only this site's own CSS and images may load. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Mochi · a tiny break-time friend for your Mac</title>
+<meta name="description" content="Mochi is a cute little pet that floats on your Mac, talks to you kindly, and reminds you to rest your eyes and stretch.">
+<link rel="icon" type="image/png" href="images/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="eyebrow">For macOS 14 Sonoma or newer</p>
+    <h1>Mochi <span aria-hidden="true">🍡🌱</span></h1>
+    <p class="lead">A tiny friend that floats on your screen, says sweet things, and reminds you to rest your eyes and stretch.</p>
+    <div class="cta">
+      <a class="button" href="https://github.com/Anhlam09/mochi-site/releases/download/v0.1.0/Mochi-0.1.0.zip">Download Mochi</a>
+      <p class="meta">Version 0.1.0 · 0.9 MB · Apple Silicon and Intel · Free</p>
+    </div>
+    <picture class="hero-art">
+      <source srcset="images/talking_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/talking_light.png" width="936" height="322" alt="Four Mochis with happy faces saying things like “Good morning! How are you feeling today?” and “Boop! You're doing great”.">
+    </picture>
+  </header>
+
+  <section aria-labelledby="what">
+    <h2 id="what">What Mochi does</h2>
+    <ul class="cards">
+      <li><h3>⏰ Break reminders</h3><p>Gentle 20-20-20 eye breaks, Pomodoro, or your own timer. Mochi yawns when a break is near and bounces when it's time.</p></li>
+      <li><h3>💬 Talks to you</h3><p>Good morning hellos, check-ins, kind words and cute fun facts. Tap Mochi and it answers back.</p></li>
+      <li><h3>🎨 Six flavors</h3><p>Every couple of hours Mochi does a little spin and changes color: strawberry, matcha, taro, ramune, peach or banana.</p></li>
+      <li><h3>🔋 Easy on battery</h3><p>Calm animation uses about 1% CPU. Mochi stays quiet while you're away.</p></li>
+      <li><h3>🔒 Private</h3><p>No internet, no accounts, no tracking. Everything stays on your Mac.</p></li>
+      <li><h3>🌙 Fits in</h3><p>Light and dark mode, four sizes, Reduce Motion, and it never steals focus.</p></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="flavors">
+    <h2 id="flavors">Pick a flavor</h2>
+    <picture>
+      <source srcset="images/flavors_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/flavors_light.png" width="1216" height="166" alt="Six Mochis in strawberry pink, matcha green, taro lavender, ramune blue, peach and banana yellow.">
+    </picture>
+    <picture>
+      <source srcset="images/spin_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/spin_light.png" width="1692" height="173" alt="Mochi spinning around and turning from strawberry pink into matcha green.">
+    </picture>
+  </section>
+
+  <section aria-labelledby="install">
+    <h2 id="install">How to install</h2>
+    <ol class="steps">
+      <li>Download the zip and double-click it to unzip.</li>
+      <li>Drag <strong>Mochi</strong> into your <strong>Applications</strong> folder.</li>
+      <li>Open Mochi. Your Mac will say it can't verify the developer. That's expected: Mochi is a free hobby app that isn't registered with Apple, which costs $99 a year. Click <strong>Done</strong>.</li>
+      <li>Open <strong>System Settings → Privacy &amp; Security</strong>, scroll down, and click <strong>Open Anyway</strong> next to Mochi. Confirm with your password.</li>
+      <li>That's it! Look for 🌱 in your menu bar. You only need to do this once.</li>
+    </ol>
+    <p class="note">On macOS 14 Sonoma you can instead right-click Mochi, choose <strong>Open</strong>, then click <strong>Open</strong> again.</p>
+  </section>
+
+  <section aria-labelledby="verify">
+    <h2 id="verify">Check your download (optional)</h2>
+    <p>Only download Mochi from this page. To make sure your file is the real one, open Terminal and run:</p>
+    <pre><code>shasum -a 256 ~/Downloads/Mochi-0.1.0.zip</code></pre>
+    <p>It should print exactly this fingerprint:</p>
+    <pre class="hash"><code>32c5275ad6855f53ddcb9aefbeb1c5c48a65ec7f5b483956e6fbe3666c3cf955</code></pre>
+    <p>If it's different, don't open the file.</p>
+  </section>
+
+  <section aria-labelledby="poses">
+    <h2 id="poses">Mochi's moods</h2>
+    <picture>
+      <source srcset="images/scenes_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/scenes_light.png" width="1540" height="230" alt="Mochi relaxing, focusing, yawning, waving for a break, napping, paused with a droopy sprout, and chatting.">
+    </picture>
+  </section>
+</main>
+<footer>
+  <p>Made with 💕 by Anh · <a href="https://github.com/Anhlam09/mochi-site/releases" rel="noopener noreferrer">All versions</a></p>
+</footer>
+</body>
+</html>
